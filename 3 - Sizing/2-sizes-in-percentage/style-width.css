@@ -1,0 +1,22 @@
+img {
+    max-width: 100px;
+}
+
+/* section { */
+    /* max-width: 50%; */
+/* } */
+/* section > div {
+    width: 100%;
+    border: 1px solid #f00;
+    margin: 0 auto;
+}
+
+section > div:first-of-type {
+    max-width: 30%;
+} */
+
+section {
+    width: 70%;
+    border: 1px solid #f00;
+    margin: 0 auto;
+}

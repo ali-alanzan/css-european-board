@@ -1,0 +1,24 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("bg.jpg");
+}
+
+section>div {
+    color: #fff;
+    padding-top: 100px ;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h1 {
+    padding: 40px 0;
+    background-color: rgba(60, 227, 233, 0.664);
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Margin and Padding</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Applying margin and padding to all elements */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; /* Ensure padding doesn't affect element size */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            background-color: #555;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            background-color: #666;
+        }
+
+        nav ul li a:hover {
+            background-color: #777;
+        }
+
+        /* Main section styles */
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Article styles */
+        article {
+            background-color: #eee;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Sidebar styles */
+        aside {
+            background-color: #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Form styles */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>This is a demonstration of HTML elements with margin and padding</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section>
+        <!-- Article -->
+        <article>
+            <h2>Article Title</h2>
+            <p>This is a paragraph inside an article. The article element has both margin and padding applied to it, providing spacing outside and inside the element.</p>
+        </article>
+
+        <!-- Sidebar -->
+        <aside>
+            <h3>Sidebar Title</h3>
+            <p>This is content inside the sidebar. Margins are used to space the sidebar away from other content, while padding keeps the content inside spaced from the borders.</p>
+        </aside>
+
+        <!-- Form -->
+        <form>
+            <h2>Contact Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Table -->
+        <h2>Sample Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Footer content goes here &copy; 2024</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+
+/*equal match */
+/*  input[type="password"] {
+    width: 100%;
+    margin: 20px 0;
+} */
+
+
+/*ends with word (*) */
+/* input[type$="word"] {
+    width: 80%;
+    margin: 20px 0;
+} */
+
+/* starts with pass (^) */
+/* input[type^="pass"] {
+    width: 80%;
+    margin: 20px 0;
+} */
+
+
+
+/* Contains ss ($) */
+input[class*="ss"] {
+    width: 80%;
+    margin: 20px 0;
+}

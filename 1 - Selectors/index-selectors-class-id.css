@@ -1,0 +1,25 @@
+body {
+    /* CSS properties are here */
+    background-color: red;
+    color: white;
+}
+
+h1 {
+    color: green;
+    font-size: 190px;
+}
+
+
+.text-yellow {
+    color: yellow;
+}
+
+#title {
+    font-size: 99px;
+    color: black;
+    background-color: white;
+}
+
+input {
+    
+}

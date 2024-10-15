@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@font-face {
+    font-family: TestLondrinaSketch;
+    src: url('LondrinaSketch-Regular.ttf');
+}
+
+h1 {
+    color: red; /* color name from the colors installed in the browser */
+    color: rgb(199, 93, 51); /* red, green, blue */
+    color: #D93559; /* hexa code  */
+    background-color: black;
+    background-color: rgb(0, 0, 0);
+    background-color: #000;
+	font-size: 20px;
+	font-size: 2em; /* parent element */
+	font-size: 2rem; /* root element */
+    text-align: left; /* Default: left */
+    text-align: center;
+}
+
+h2 {
+    font-size: 21px;
+    text-align: right;
+}
+
+.rem {
+    font-size: 1rem;
+}
+
+
+small {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 100; /*100->500 normal, 600->900 bold */
+    font-weight: bolder;
+}
+
+b {
+    font-weight: normal;
+}
+
+
+h3 {
+    font-family: Arial;
+    font-family: tahoma, Arial;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+
+
+
+h4 {
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: "TestLondrinaSketch", Arial;
+}

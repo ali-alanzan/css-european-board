@@ -1,0 +1,31 @@
+/* Multiple Selectors */
+body, header {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* Space Selectors */
+body div {
+    color: red;
+}
+
+/* Direct Selectors */
+body > header > nav {
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+/* Direct Specific Selectors: First of Type */
+body > div:first-of-type {
+    background-color: blue;
+}
+
+/* Direct Specific Selectors: Last of Type */
+body > div:last-of-type {
+    background-color: yellow;
+}
+
+/* Direct Specific Selectors: nth-of-type */
+body > div:nth-of-type(2) {
+    background-color: pink;
+}
