@@ -1,0 +1,71 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero {
+    height: 400px;
+    width: 100%;
+    float: left;
+    background-color: #f00;
+    position: relative;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 1200px 500px;
+    margin-bottom: 1200px;
+}
+.up, .title, .title-2 {
+    background-color: blue;
+    color: #fff;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    top: 370px;  /* top position */
+    left: 100px; /* left position */ 
+    position: absolute;
+
+}
+
+
+/*
+right: 100px; // right position
+left: initial: reset to left from title class 
+initial or revert to reset any direction left|right|bottom|top
+*/
+/* .title-2 {
+    right: 100px;
+    left: initial; 
+    bottom: 100px;
+    top: initial;
+} */
+
+.title-2 {
+    right: 1%; 
+    left: initial;
+    bottom: 0%;
+    top: initial;
+
+}
+
+/* .title-2 {
+    right: 1vw; 
+    left: initial;
+    bottom: 1vw;
+    top: initial;
+} */
+
+.up {
+    position: fixed;
+    bottom: 30px;
+    top: initial;
+    left: initial;
+    right: 30px;
+    opacity: .25;
+}
+
+.up:hover {
+    opacity: 1;
+}

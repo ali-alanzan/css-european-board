@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding Reset Example</title>
+    <style>
+        /* Reset padding and margin */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling body and container */
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        /* Styling for headings, paragraphs, and lists */
+        h1 {
+            color: darkblue;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: darkgreen;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            background-color: lightyellow;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 5px solid gold;
+            font-style: italic;
+        }
+
+        ul {
+            background-color: blue;
+            padding-left: 60px;
+            margin-bottom: 20px;
+            padding: 10px 0 20px 16%;
+            list-style-type: none;
+            position: relative;
+        }
+        ul:before {
+            content: " Before ";
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            top: -10px;
+            left:4%;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: red;;
+        }
+
+        ul:after {
+            content: " After ";
+            color: #fff;
+            font-weight: bold;
+            position: absolute;
+            top: -10px;
+            right:10%;
+            width: 100px;
+            height: 50px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: red;;
+        }
+
+        ul li {
+            color: white;
+            list-style: none;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightblue;
+            text-align: left;
+        }
+
+        table > tbody > tr:nth-of-type(2) > td:nth-of-type(2) {
+            display: block;
+            border: 1px solid blue;
+            border: 1px solid red;
+            border: 10px solid red;
+            border: 10px dashed red;
+            border: none;
+            border-top: 10px solid red;
+            border-bottom: 3px solid blue;
+            border-left: 5px solid green;
+            border-right: 10px solid gray;
+            border-radius: 10px;
+            border-radius: 40px;
+            border-radius: 100px;
+            padding: 60px; /* inner the element */
+            margin: 20px; /* outside the element */ 
+            margin: 10px; /* all direction */
+            margin: 0px 140px; /* top|bottom and right|left */
+            margin: 10px 5px 12px 20px; /* top | right | bottom | left */
+            margin-top: 50px;
+            margin-right: 20px;
+            margin-bottom: 90px;
+            margin-left: 40px;
+            outline: 10px solid gray;
+            outline: 20px dashed brown;
+            outline: none;
+            outline: 0;
+            outline-style: solid;
+            outline-color: yellow;
+            outline-width: 20px;
+            outline-offset: 10px; /* the start of the outline */
+        }
+
+        input {
+            padding: 10px; /* all direction */
+            padding: 0px 40px; /* top|bottom and right|left */
+            padding: 0 5px 2px 20px; /* top | right | bottom | left */
+            padding-top: 10px;
+            padding-right: 100px;;
+            padding-bottom: 20px;
+            padding-left: 3px;
+        }
+
+        .bordered {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 10px;
+            border-radius: 0px 10px; /* directions in handbook */
+            border-radius: 0px 10px 5px 0; /* directions in handbook */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Padding Reset Example</h1>
+        <p>This is a paragraph of text styled with custom margins. Notice how everything looks tightly aligned because of the universal reset applied. If you remove the <code>padding: 0;</code> rule from the reset, you will see spacing around various elements that had default browser padding.</p>
+        
+        <blockquote>This is a blockquote. Removing the padding reset will make this blockquote more padded and indented by default.</blockquote>
+
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+        <input type="text" value="kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" placeholder="Text">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bordered"></div>
+</body>
+</html>

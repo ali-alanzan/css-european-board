@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        a {
+            color: yellow;
+        }
+        a:link {
+            color: skyblue;
+        }
+        a:visited {
+            color: red;
+        }
+        button:active, a:active {
+            background-color: red;
+            color: #fff;
+        }
+
+        input:focus {
+            border: 10px solid red;
+            outline: 10px solid blue;
+        }
+    </style>
+    <input type="text" placeholder="any input">
+    <button>Not link</button>
+    <a>Not link</a>
+    <a href="https://google.com/?11=122112">Visited</a>
+    <a href="https://google.com/?11=122444">Visited 2</a>
+    <a href="https://google.com/?11=1221333">Visited 3</a>
+    <a href="https://google.com/?9=000">Visited 3</a>
+</body>
+</html>
