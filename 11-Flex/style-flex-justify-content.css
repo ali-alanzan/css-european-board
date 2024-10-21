@@ -1,0 +1,39 @@
+.boxes {
+    display: flex;
+    border: 5px solid blue;
+    max-width: 500px;
+    flex-wrap: wrap; 
+    /* justify-content vertical on width line */
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    /* align-item horizental on height line */
+    align-items: end;
+    align-items: start;
+    align-items: center;
+    height: 300px;
+}
+
+.box {
+    position: relative;
+}
+
+
+
+.box:before {
+    counter-increment: box;
+    content: "Box: #" counter(box);
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    left: 25px;
+}
+
+.innerbox {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #f00;
+}

@@ -1,0 +1,13 @@
+.mybox {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transform: scaleX(1.2);
+    transform-style: preserve-3d;
+}
+
+body {
+    perspective:400px;
+    perspective-origin: left;
+}
+

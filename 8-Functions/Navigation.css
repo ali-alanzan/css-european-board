@@ -1,0 +1,25 @@
+ul {
+	list-style-type: none;
+}
+
+ul > li {
+	float: left;
+	margin: 0 20px;
+	width: 20%;
+    color: #fff;
+    background-color: red;
+}
+
+ul li.dropdown ul { /* the submenu in the li with dropdown class  */
+	width: 100%;
+    display: none;
+}
+
+
+ul li.dropdown ul li {
+  width: 100%;
+}
+
+ul li.dropdown:hover ul {
+	display: block;
+}

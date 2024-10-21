@@ -1,0 +1,58 @@
+.animated , .animated_2 {
+    border: none;
+    background-color: #f00;
+    cursor: pointer;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 4px;
+	animation-name: theanimationname;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards; /* forwards not affected with  infinite */
+
+    /*shorthand*/
+    animation: 0s 2s  forwards infinite theanimationname ease-in;
+}
+
+.animated_2 {
+	animation-name: theanimationname_2;
+    animation-iteration-count: 1;
+	animation-direction: reverse;
+    animation: 0s 2s  forwards infinite theanimationname_2 ease-in;
+}
+
+.animated:hover {
+    animation-play-state:paused;
+}
+
+@keyframes theanimationname {
+    from {
+        padding: 4px 10px;
+    }
+    to {
+        padding: 10px 20px;
+    }
+}
+
+
+@keyframes theanimationname_2 {
+    0% {
+        padding: 4px 10px;
+        background-color: gray;
+    }
+    30% {
+        padding: 10px 20px;
+    }
+    50% {
+        background-color: blue;
+    }
+    70% {
+        padding: 20px 30px;
+    }
+    100% {
+        padding: 40px 20px;
+    }
+}

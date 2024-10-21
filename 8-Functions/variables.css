@@ -1,0 +1,21 @@
+:root {
+    --color_primary: red;
+}
+
+h1 {
+    color: var(--color_primary);
+}
+
+div {
+    --color_primary: green;
+}
+ h2 {
+    color: var(--color_primary);
+ }
+
+ul {
+}
+
+ul > li {
+    color: var(--color_primary);
+}

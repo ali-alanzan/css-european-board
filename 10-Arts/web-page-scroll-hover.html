@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollbar Color on Hover</title>
+    <style>
+        /* Custom Scrollbar Styling for WebKit Browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        /* Scrollbar track */
+        ::-webkit-scrollbar-track {
+            background: #e0e0e0; /* Light gray background for track */
+        }
+
+        /* Scrollbar handle (thumb) */
+        ::-webkit-scrollbar-thumb {
+            background-color: #888; /* Dark gray color for the handle */
+            border-radius: 6px;     /* Rounded corners for the handle */
+            border: 2px solid #e0e0e0; /* Optional border to blend into the track */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #f00; /* Change color to a darker shade when hovered */
+        }
+
+        /* Body content for scrolling */
+        body {
+            height: 150vh; /* Height increased to allow scrollbar to appear */
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            max-width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Scrollbar Color Change on Hover</h1>
+    <p>Scroll down to see the custom scrollbar in action. When you hover over the scrollbar, the thumb color changes to a darker shade.</p>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Scrollbar and Text Selection Color</title>
+    <style>
+        /* Custom Scrollbar Styling for WebKit Browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        /* Track of the scrollbar */
+        ::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
+
+        /* Handle of the scrollbar */
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 6px;
+            border: 2px solid #f0f0f0;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        /* Firefox Scrollbar Styling */
+        /* This requires setting scrollbar colors on root */
+        html {
+            scrollbar-width: thin; /* Thin scrollbar */
+            scrollbar-color: #888 #f0f0f0; /* thumb color and track color */
+        }
+
+        /* Text Selection Color Styling */
+        ::selection {
+            background-color: #ffcc00; /* Background color when text is selected */
+            color: #f00; /* Text color when text is selected */
+        }
+
+        /* WebKit-specific text selection styling */
+        ::-moz-selection {
+            background-color: #ffcc00; /* Same as above for Firefox */
+            color: #000;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        div {
+            margin: 1200px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Custom Scrollbar and Text Selection Example</h1>
+
+    <p>Scroll down to see the custom scrollbar in action. Also, try selecting some text on this page to see the custom selection background and text color.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt nulla ac nisi viverra, ac facilisis metus malesuada. Sed luctus augue a ultricies ullamcorper. Etiam vehicula metus et augue pharetra suscipit. Curabitur nec convallis libero, in tincidunt felis.</p>
+
+    <p>Quisque at dolor nec mauris consequat eleifend. Nulla facilisi. Integer varius faucibus lacus non ullamcorper. Suspendisse potenti. In vulputate dui ut magna porttitor gravida. Vestibulum pulvinar mauris nec risus consequat, ut aliquam ligula elementum.</p>
+
+    <p>Pellentesque sit amet nunc nisi. Nam ornare consectetur sem. Nullam a condimentum eros. Integer vitae consectetur eros. Suspendisse malesuada libero id orci bibendum congue. Maecenas vulputate nunc vel felis fringilla, nec finibus mauris dapibus.</p>
+
+    <p>Proin dapibus volutpat velit. Vivamus nec egestas ligula. Etiam laoreet scelerisque nisi, vitae fermentum odio pretium ut. Curabitur gravida libero id orci vulputate, in ultricies risus elementum. Praesent non ornare felis.</p>
+    <div></div>
+</body>
+</html>

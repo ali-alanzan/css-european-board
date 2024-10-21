@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .section-flex {
+            display: flex;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .section-flex > div {
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .example-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Examples</h1>
+
+    <!-- Example 1: justify-content: center -->
+    <div class="container">
+        <div class="example-title">justify-content: center</div>
+        <div class="section-flex" style="justify-content: center;">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+    </div>
+
+    <!-- Example 2: align-items: baseline -->
+    <div class="container">
+        <div class="example-title">align-items: baseline</div>
+        <div class="section-flex" style="align-items: baseline;">
+            <div style="font-size: 12px;">Item 1</div>
+            <div style="font-size: 24px;">Item 2</div>
+            <div style="font-size: 18px;">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Example 3: align-content: space-around -->
+    <div class="container">
+        <div class="example-title">align-content: space-around</div>
+        <div class="section-flex" style="flex-wrap: wrap; align-content: space-around; height: 200px;">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+    </div>
+
+    <!-- Example 4: flex-basis -->
+    <div class="container">
+        <div class="example-title">flex-basis</div>
+        <div class="section-flex">
+            <div style="flex-basis: 200px;">Item 1 (200px basis)</div>
+            <div style="flex-basis: 100px;">Item 2 (100px basis)</div>
+            <div style="flex-basis: 150px;">Item 3 (150px basis)</div>
+        </div>
+    </div>
+
+    <!-- Example 5: align-self -->
+    <div class="container">
+        <div class="example-title">align-self: flex-start on second item</div>
+        <div class="section-flex">
+            <div>Item 1</div>
+            <div style="align-self: flex-start;">Item 2 (flex-start)</div>
+            <div>Item 3</div>
+        </div>
+    </div>
+
+    <!-- Example 6: flex-shrink -->
+    <div class="container">
+        <div class="example-title">flex-shrink: 2 on second item</div>
+        <div class="section-flex">
+            <div style="flex-shrink: 1;">Item 1</div>
+            <div style="flex-shrink: 2;">Item 2 (shrinks faster)</div>
+            <div style="flex-shrink: 1;">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Example 7: flex-grow -->
+    <div class="container">
+        <div class="example-title">flex-grow: 1 on all items</div>
+        <div class="section-flex">
+            <div style="flex-grow: 1;">Item 1</div>
+            <div style="flex-grow: 1;">Item 2</div>
+            <div style="flex-grow: 1;">Item 3</div>
+        </div>
+    </div>
+
+    <!-- Example 8: order -->
+    <div class="container">
+        <div class="example-title">order: -1 on second item</div>
+        <div class="section-flex">
+            <div>Item 1</div>
+            <div style="order: -1;">Item 2 (comes first)</div>
+            <div>Item 3</div>
+        </div>
+    </div>
+
+    <!-- Example 9: flex shorthand -->
+    <div class="container">
+        <div class="example-title">flex: 1 1 100px</div>
+        <div class="section-flex">
+            <div style="flex: 1 1 100px;">Item 1</div>
+            <div style="flex: 1 1 100px;">Item 2</div>
+            <div style="flex: 1 1 100px;">Item 3</div>
+        </div>
+    </div>
+
+</body>
+</html>

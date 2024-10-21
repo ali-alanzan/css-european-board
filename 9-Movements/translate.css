@@ -1,0 +1,23 @@
+.btn {
+    border: none;
+    background-color: #f00;
+    cursor: pointer;
+    padding: 4px 10px;
+    margin: 0 auto;
+    display: table;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 4px;
+	/* transform: translate(100px); 
+	transform: translateX(150px);
+	transform: translateY(150px);
+	transform: translateZ(150px);
+	transform: translate3d(125px, 35px, 15px);  */
+	transform: translateZ(20px);
+	perspective-origin: center;
+}
+
+body {
+    perspective: 100px;
+    perspective-origin: center;
+}

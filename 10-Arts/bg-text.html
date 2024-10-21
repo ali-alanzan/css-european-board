@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Gradient on Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .gradient-text {
+            font-size: 72px;
+            font-weight: bold;
+            background: linear-gradient(to right, #f06, #00f); /* Standard gradient */
+            -webkit-background-clip: text; /* Clip background to text for WebKit browsers */
+            background-clip: text; /* Clip background to text (modern support) */
+            color: transparent; /* Make the text itself transparent */
+            -webkit-text-fill-color: transparent; /* WebKit-specific way to ensure text fill is transparent */
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-text">
+        Gradient Text!
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+.ellipse {
+    width: 300px;
+    height: 150px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    clip-path: ellipse(20% 50% at 50% 50%);
+}
+
+.polygon {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    clip-path: polygon(50% 10%, 50% 100%, 0% 90%, 10% 30%);
+}
+
+
+.inset {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    clip-path: inset(20px 10px 20px 0px);
+}
+
+
+.custom {
+    width: 200px;
+    height: 100px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    /* clip-path: none; */
+    clip-path: polygon(90% 38%, 98% 27%, 98% 13%, 70% 12%, 8% 9%, 13% 74%, 49% 80%, 92% 86%, 90% 59%);
+
+}
+
+.class {
+    clip-path: polygon(25% 0%, 54% 46%, 100% 50%, 75% 100%, 25% 100%, 22% 60%);
+    -webkit-clip-path: polygon(25% 0%, 54% 46%, 100% 50%, 75% 100%, 25% 100%, 22% 60%);
+    -mox-clip-path: polygon(25% 0%, 54% 46%, 100% 50%, 75% 100%, 25% 100%, 22% 60%);
+    -o-clip-path: polygon(25% 0%, 54% 46%, 100% 50%, 75% 100%, 25% 100%, 22% 60%);
+    -ms-clip-path: polygon(25% 0%, 54% 46%, 100% 50%, 75% 100%, 25% 100%, 22% 60%);
+
+}

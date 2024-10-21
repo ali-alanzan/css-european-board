@@ -1,0 +1,22 @@
+.up {
+    border: none;
+    background-color: #f00;
+    cursor: pointer;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+.up:hover {
+    background-color: blue;
+    transition: padding .5s ease-in-out, 
+        background-color 1s ease-in-out;  
+    transition: all .5s ease-in-out;
+    padding: 10px 20px;
+
+	transition-delay: 5s; /* start this transition after 5 seconds */ 
+	transition-duration: 1s; /* the transition take 1 second from the start to end */
+	transition-property: all; /* apply this transition on all the CSS properties */
+	transition-timing-function: ease-in-out;
+}
